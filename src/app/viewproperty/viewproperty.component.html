@@ -1,0 +1,18 @@
+<app-user-home></app-user-home>
+<div>
+  <p>All Properties for resendential sale </p>
+</div>
+<div class="row">
+  
+<div class="card col-sm-12 col-lg-3" style="width: 18rem;" *ngFor="let prop of property; let i = index">
+    <div class="card-body">{{i+1}}
+      <p class="card-text">{{prop.type}} in</p>
+      <p class="card-text">{{prop.place}}</p>
+      <p class="card-text">{{prop.value}}</p>
+      <p class="card-text">{{prop.area}}</p>
+      <p class="card-text">Owner : {{prop.owner}}</p>
+      <p class="card-text">Posted ON : {{prop.posted_on}}</p>
+      <a href="/bid" class="btn btn-primary">Bid</a>
+    </div>
+  </div>
+</div>

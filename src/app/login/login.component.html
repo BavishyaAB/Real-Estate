@@ -1,0 +1,14 @@
+<app-landing></app-landing>
+<form [formGroup]="signinForm">
+  <fieldset>
+    <div>
+    Userid:<input type="text" formControlName="phno" class="form-control" id="phno"  placeholder="RMN" />
+    </div>
+    <div>
+    Password:
+      <input type="password" formControlName="passwd" class="form-control" id="passwd" placeholder="Password"/>
+      </div>
+    <div><button type="submit" (click)="signin()" class="btn btn-primary" style="margin-left:auto;margin-right:auto;display:block;margin-top:5%;margin-bottom:0%" >Sign in</button></div>
+
+  </fieldset>
+</form>
